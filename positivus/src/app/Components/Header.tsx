@@ -2,10 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from '../../../public/Logo.png'
 import Burger from '../../../public/burger.png'
+import useIsMobile from '@/Hooks/resizeHooks'
 export default function Header() {
+  const isMobile = useIsMobile()
 
   return (
-    <div className='flex w-screen justify-between items-center p-5'>
+    <div
+      style={{ paddingRight: isMobile ? 30 : 100, paddingLeft: isMobile ? 30 : 100 }}
+      className='flex w-screen justify-between items-center'
+    >
       <Image
         style={{ width: 144, height: 23.16 }}
         src={Logo}

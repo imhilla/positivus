@@ -32,7 +32,7 @@ export default function Services() {
           At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div className='w-full'>
+      <div className='w-full lg:grid grid-cols-2 gap-5'>
         <ServicesWrappers background={'#B9FF66'}>
           <div>
             <div>

@@ -1,2 +1,0 @@
-# positivus
-Positivus landing page

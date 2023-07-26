@@ -7,10 +7,7 @@ export default function Header() {
   const isMobile = useIsMobile()
 
   return (
-    <div
-      style={{ paddingRight: isMobile ? 30 : 100, paddingLeft: isMobile ? 30 : 100 }}
-      className='flex w-screen justify-between items-center'
-    >
+    <div className='flex w-full justify-between items-center'>
       <Image
         style={{ width: 144, height: 23.16 }}
         src={Logo}

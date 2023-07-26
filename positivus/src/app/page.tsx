@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Header from './Components/Header'
 import { space_grotesk } from '../../styles/fonts'
 

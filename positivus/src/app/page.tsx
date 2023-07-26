@@ -6,6 +6,7 @@ import useIsMobile from '@/Hooks/resizeHooks'
 import Footer from './Components/Footer'
 import { useEffect, useState } from 'react'
 import Companies from './Components/Companies'
+import Services from './Components/Services'
 
 export default function Home() {
   const isMobile = useIsMobile()
@@ -30,6 +31,7 @@ export default function Home() {
           <Header />
           <Hero />
           <Companies />
+          <Services />
           <Footer />
         </>
       }

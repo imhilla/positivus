@@ -8,13 +8,13 @@ export default function Hero() {
 
   return (
     <div style={{ paddingTop: 40 }} className='lg:flex flex-row'>
-      <div>
+      <div className='flex justify-between flex-col'>
         <h1 style={{ fontSize: isMobile ? 30 : 60 }}>Navigating the digital landscape for success</h1>
-        <p className='hidden lg:block mt-4'>
+        <p className='hidden lg:block mt-8' style={{ fontSize: 24 }}>
           Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
         </p>
         <button
-          className='hidden lg:block mt-4'
+          className='hidden lg:block mt-8 text-white'
           style={{
             width: 264,
             height: 68,
@@ -35,7 +35,7 @@ export default function Hero() {
         />
       </div>
       <div>
-        <p className='lg:hidden mt-4'>
+        <p className='lg:hidden mt-4' style={{ fontSize: 24 }}>
           Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
         </p>
         <button

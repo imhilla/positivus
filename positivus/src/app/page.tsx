@@ -4,9 +4,15 @@ import { space_grotesk } from '../../styles/fonts'
 import Hero from './Components/Hero'
 import useIsMobile from '@/Hooks/resizeHooks'
 import Footer from './Components/Footer'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
   const isMobile = useIsMobile()
+  const [finishLoading, setFinishLoading] = useState(false)
+
+  useEffect(() => {
+    setFinishLoading(true)
+  }, [])
 
   return (
     <main
@@ -18,9 +24,13 @@ export default function Home() {
       }}
       className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start"
     >
-      <Header />
-      <Hero />
-      <Footer />
+      {
+        finishLoading && <>
+          <Header />
+          <Hero />
+          <Footer />
+        </>
+      }
     </main>
   )
 }

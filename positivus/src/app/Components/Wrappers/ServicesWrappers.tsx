@@ -13,7 +13,7 @@ export default function ServicesWrappers(props) {
         borderWidth: 1,
         borderBottomWidth: 5,
         borderColor: "#191A23",
-        marginTop: 60,
+        marginTop: 30,
         backgroundColor: props.background ? props.background : '#fff'
       }}
     >

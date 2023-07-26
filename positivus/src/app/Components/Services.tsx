@@ -28,11 +28,11 @@ export default function Services() {
         >
           <h1 style={{ fontSize: isMobile ? 36 : 40 }}>Services</h1>
         </div>
-        <p style={{ fontSize: isMobile ? 16 : 18, marginTop: 30 }} className='text-center lg:text-start lg:ml-4 lg:w-1/2'>
+        <p style={{ fontSize: isMobile ? 16 : 18, marginTop: isMobile ? 30 : 0 }} className='text-center lg:text-start lg:ml-4 lg:w-1/2'>
           At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div className='w-full lg:grid grid-cols-2 gap-5'>
+      <div className='w-full lg:grid grid-cols-2 gap-5 lg:mt-4'>
         <ServicesWrappers background={'#B9FF66'}>
           <div>
             <div>

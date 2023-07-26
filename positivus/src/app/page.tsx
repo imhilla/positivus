@@ -5,6 +5,7 @@ import Hero from './Components/Hero'
 import useIsMobile from '@/Hooks/resizeHooks'
 import Footer from './Components/Footer'
 import { useEffect, useState } from 'react'
+import Companies from './Components/Companies'
 
 export default function Home() {
   const isMobile = useIsMobile()
@@ -28,6 +29,7 @@ export default function Home() {
         finishLoading && <>
           <Header />
           <Hero />
+          <Companies />
           <Footer />
         </>
       }

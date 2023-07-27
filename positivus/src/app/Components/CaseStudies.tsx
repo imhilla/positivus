@@ -16,7 +16,8 @@ export default function CaseStudies() {
               height: isMobile ? 46 : 'auto',
               width: isMobile ? 240 : 265,
               textAlign: 'center',
-              borderRadius: 7
+              borderRadius: 7,
+              minWidth: 326
             }}
           >
             <h1 style={{ fontSize: isMobile ? 36 : 40 }}>Case Studies</h1>
@@ -26,8 +27,16 @@ export default function CaseStudies() {
           </p>
         </div>
 
-        <div className='hidden lg:flex'>
-          <div>
+        <div
+          style={{
+            backgroundColor: "#191A23",
+            padding: 50,
+            borderRadius: 45,
+            marginTop: 60,
+          }}
+          className='hidden lg:flex items-center'
+        >
+          <div style={{ marginRight: 32 }}>
             <p
               className='text-white'
               style={{
@@ -49,7 +58,8 @@ export default function CaseStudies() {
               />
             </button>
           </div>
-          <div>
+          <div style={{ height: 200, borderWidth: 1, borderColor: '#fff' }}></div>
+          <div style={{ marginLeft: 32, marginRight: 32 }}>
             <p
               className='text-white'
               style={{
@@ -71,7 +81,8 @@ export default function CaseStudies() {
               />
             </button>
           </div>
-          <div>
+          <div style={{ height: 200, borderWidth: 1, borderColor: '#fff' }}></div>
+          <div style={{ marginLeft: 32 }}>
             <p
               className='text-white'
               style={{

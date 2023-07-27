@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 import Companies from './Components/Companies'
 import Services from './Components/Services'
 import MakeThingsHappen from './Components/MakeThingsHappen'
+import CaseStudies from './Components/CaseStudies'
 
 export default function Home() {
   const isMobile = useIsMobile()
@@ -34,6 +35,7 @@ export default function Home() {
           <Companies />
           <Services />
           <MakeThingsHappen />
+          <CaseStudies />
           {/* <Footer /> */}
         </>
       }

@@ -28,7 +28,7 @@ export default function TeamWrapper(props) {
             unoptimized
           />
           <div className='flex flex-col justify-end items-start p-1'>
-            <h4 style={{ fontSize: 20 }}>{props.name}</h4>
+            <h4 style={{ fontSize: 20 }} className='text-start font-semibold'>{props.name}</h4>
             <p style={{ fontSize: 18 }} className='text-start'>{props.title}</p>
           </div>
           <div>

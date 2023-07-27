@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Image1 from '../../../../public/user1.png'
 import useIsMobile from '@/Hooks/resizeHooks'
 import linkedin from '../../../../public/linkedin.png'
 //@ts-ignore
@@ -24,13 +23,13 @@ export default function TeamWrapper(props) {
         <div className='flex flex-row'>
           <Image
             className='ml-4'
-            src={Image1}
+            src={props.image}
             alt="logo"
             unoptimized
           />
-          <div>
-            <h4>{props.name}</h4>
-            <h4>{props.title}</h4>
+          <div className='flex flex-col justify-end items-start p-1'>
+            <h4 style={{ fontSize: 20 }}>{props.name}</h4>
+            <p style={{ fontSize: 18 }} className='text-start'>{props.title}</p>
           </div>
           <div>
             <Image

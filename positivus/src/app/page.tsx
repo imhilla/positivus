@@ -7,6 +7,7 @@ import Footer from './Components/Footer'
 import { useEffect, useState } from 'react'
 import Companies from './Components/Companies'
 import Services from './Components/Services'
+import MakeThingsHappen from './Components/MakeThingsHappen'
 
 export default function Home() {
   const isMobile = useIsMobile()
@@ -32,6 +33,7 @@ export default function Home() {
           <Hero />
           <Companies />
           <Services />
+          <MakeThingsHappen />
           {/* <Footer /> */}
         </>
       }

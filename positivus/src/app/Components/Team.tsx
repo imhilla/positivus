@@ -67,6 +67,19 @@ export default function Team() {
           experience="2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries"
         />
       </div>
+      <div className='w-full flex justify-end'>
+        <button
+          className='text-white'
+          style={{
+            marginTop: 30, width: 264,
+            height: 68,
+            backgroundColor: '#191A23',
+            borderRadius: 14,
+            fontSize: 20
+          }}>
+          See all teams
+        </button>
+      </div>
     </div>
   )
 }

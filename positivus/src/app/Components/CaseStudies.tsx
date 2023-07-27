@@ -96,7 +96,7 @@ export default function CaseStudies() {
           </div>
         </div>
 
-        <div className='overflow-x-scroll mt-8 w-full flex '>
+        <div className='overflow-x-scroll mt-8 w-full flex lg:hidden'>
           <CaseWrappers background="#191A23">
             <p
               className='text-white'

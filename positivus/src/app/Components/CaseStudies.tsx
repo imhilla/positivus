@@ -6,28 +6,27 @@ import Image from 'next/image'
 export default function CaseStudies() {
   const isMobile = useIsMobile()
   return (
-    <div style={{ marginTop: 30 }} className='w-full flex  flex-col justify-center items-center'>
+    <div style={{ marginTop: isMobile ? 30 : 60 }} className='w-full flex  flex-col justify-center items-center'>
       <div className='w-full'>
-        <div className='w-full flex flex-col justify-center items-center'>
+        <div className='w-full flex flex-col justify-center items-center lg:flex-row lg:justify-start'>
           <div
             className='flex items-center justify-center'
             style={{
               backgroundColor: '#B9FF66',
               height: isMobile ? 46 : 'auto',
-              width: isMobile ? 240 : 178,
+              width: isMobile ? 240 : 265,
               textAlign: 'center',
               borderRadius: 7
             }}
           >
             <h1 style={{ fontSize: isMobile ? 36 : 40 }}>Case Studies</h1>
           </div>
-          <p style={{ fontSize: isMobile ? 16 : 18, marginTop: isMobile ? 30 : 0 }} className='text-center'>
+          <p style={{ fontSize: isMobile ? 16 : 18, marginTop: isMobile ? 30 : 0 }} className='text-center lg:text-start lg:ml-4 lg:w-1/2'>
             Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
           </p>
         </div>
 
-
-        <div className='hidden'>
+        <div className='hidden lg:flex'>
           <div>
             <p
               className='text-white'

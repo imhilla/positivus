@@ -9,6 +9,7 @@ import Companies from './Components/Companies'
 import Services from './Components/Services'
 import MakeThingsHappen from './Components/MakeThingsHappen'
 import CaseStudies from './Components/CaseStudies'
+import WorkingProcess from './Components/WorkingProcess'
 
 export default function Home() {
   const isMobile = useIsMobile()
@@ -36,6 +37,7 @@ export default function Home() {
           <Services />
           <MakeThingsHappen />
           <CaseStudies />
+          <WorkingProcess />
           {/* <Footer /> */}
         </>
       }

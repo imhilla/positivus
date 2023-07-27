@@ -17,7 +17,6 @@ export default function CaseStudies() {
               width: isMobile ? 240 : 265,
               textAlign: 'center',
               borderRadius: 7,
-              minWidth: 326
             }}
           >
             <h1 style={{ fontSize: isMobile ? 36 : 40 }}>Case Studies</h1>

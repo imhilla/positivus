@@ -141,7 +141,7 @@ export default function Footer() {
           </div>
           <div
             style={{ borderColor: '#fff', borderWidth: 1, marginTop: 10, marginBottom: 10 }}
-            className='w-full'></div>
+            className='w-full' />
           <div className='my-4 flex flex-row justify-start items-center'>
             <h4 className='text-white'>© 2023 Positivus. All Rights Reserved.</h4>
             <h4 className='text-white ml-8 underline'>Privacy Policy</h4>

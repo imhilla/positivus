@@ -24,28 +24,34 @@ export default function Home() {
 
   return (
     <main
-      style={{
-        ...space_grotesk.style,
-        paddingTop: isMobile ? 30 : 60,
-        paddingRight: isMobile ? 20 : 100,
-        paddingLeft: isMobile ? 20 : 100,
-      }}
       className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start max-w-screen-2xl"
     >
+      <div
+        className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start max-w-screen-2xl"
+        style={{
+          ...space_grotesk.style,
+          paddingTop: isMobile ? 30 : 60,
+          paddingRight: isMobile ? 20 : 100,
+          paddingLeft: isMobile ? 20 : 100,
+        }}
+      >
+        {
+          finishLoading && <>
+            <Header />
+            <Hero />
+            <Companies />
+            <Services />
+            <MakeThingsHappen />
+            <CaseStudies />
+            <WorkingProcess />
+            <Team />
+            <Testimonials />
+            <ContactUs />
+          </>
+        }
+      </div>
       {
-        finishLoading && <>
-          <Header />
-          <Hero />
-          <Companies />
-          <Services />
-          <MakeThingsHappen />
-          <CaseStudies />
-          <WorkingProcess />
-          <Team />
-          <Testimonials />
-          <ContactUs />
-          {/* <Footer /> */}
-        </>
+        finishLoading && <Footer />
       }
     </main>
   )

@@ -26,4 +26,7 @@ body {
     rgb(var(--background-start-rgb)); */
   max-width: 1440;
   padding: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

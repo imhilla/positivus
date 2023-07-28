@@ -29,7 +29,7 @@ export default function Home() {
         paddingRight: isMobile ? 20 : 100,
         paddingLeft: isMobile ? 20 : 100,
       }}
-      className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start"
+      className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start max-w-screen-2xl"
     >
       {
         finishLoading && <>

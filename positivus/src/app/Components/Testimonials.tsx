@@ -4,6 +4,7 @@ import Image from 'next/image'
 import arrowleft from '../../../public/arrowleft.png'
 import arrowright from '../../../public/arrowright.png'
 import stars from '../../../public/starstestimonials.png'
+
 export default function Testimonials() {
   const isMobile = useIsMobile()
   return (
@@ -28,12 +29,14 @@ export default function Testimonials() {
       <div
         className=' mt-8 w-full'
         style={{
-          padding: 30,
           backgroundColor: "#191A23",
           borderRadius: 45,
+          paddingLeft: 30,
+          paddingRight: 30,
+          paddingTop: 30
         }}
       >
-        <div className='flex overflow-x-scroll gap-5 pb-4'>
+        <div className={`flex overflow-x-scroll gap-5 pb-4`}>
           <div className='relative'>
             <div
               style={{
@@ -104,7 +107,7 @@ export default function Testimonials() {
         <div className='w-full flex justify-center items-center'>
           <div
             className='flex justify-between lg:w-96 items-center'
-            style={{ marginTop: 60, marginBottom: 60 }}
+            style={{ marginTop: 30, marginBottom: 30 }}
           >
             <div>
               <Image
@@ -114,7 +117,7 @@ export default function Testimonials() {
                 unoptimized
               />
             </div>
-            <div>
+            <div style={{ marginLeft: 10, marginRight: 10 }}>
               <Image
                 src={stars}
                 alt="logo"

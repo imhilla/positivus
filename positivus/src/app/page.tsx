@@ -12,6 +12,7 @@ import CaseStudies from './Components/CaseStudies'
 import WorkingProcess from './Components/WorkingProcess'
 import Team from './Components/Team'
 import Testimonials from './Components/Testimonials'
+import ContactUs from './Components/ContactUs'
 
 export default function Home() {
   const isMobile = useIsMobile()
@@ -42,6 +43,7 @@ export default function Home() {
           <WorkingProcess />
           <Team />
           <Testimonials />
+          <ContactUs />
           {/* <Footer /> */}
         </>
       }

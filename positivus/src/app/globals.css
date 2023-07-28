@@ -27,6 +27,10 @@ body {
   max-width: 1440;
   padding: 100;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.hide_scroll::-webkit-scrollbar {
+  display: none;
 }

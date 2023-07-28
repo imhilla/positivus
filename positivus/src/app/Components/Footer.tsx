@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import footerlogo from '../../../public/footerlogo.png'
 import useIsMobile from '@/Hooks/resizeHooks'
+import socials from '../../../public/social.png'
 export default function Footer() {
   const isMobile = useIsMobile()
 
@@ -60,6 +61,14 @@ export default function Footer() {
                 borderRadius: 14,
                 fontSize: 20
               }}>Subscribe to news</button>
+          </div>
+          <div>
+            <Image
+              style={{ width: 130, height: 30 }}
+              src={socials}
+              alt="logo"
+              unoptimized
+            />
           </div>
         </div> : <div>
 

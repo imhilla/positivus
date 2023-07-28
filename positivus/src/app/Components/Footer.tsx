@@ -62,7 +62,7 @@ export default function Footer() {
                 fontSize: 20
               }}>Subscribe to news</button>
           </div>
-          <div>
+          <div className='my-4'>
             <Image
               style={{ width: 130, height: 30 }}
               src={socials}
@@ -70,10 +70,10 @@ export default function Footer() {
               unoptimized
             />
           </div>
-          <div></div>
-          <div>
-            <h4>© 2023 Positivus. All Rights Reserved.</h4>
-            <h4>Privacy Policy</h4>
+          <div className='border w-full'></div>
+          <div className='my-4 flex flex-col justify-center items-center'>
+            <h4 className='text-white'>© 2023 Positivus. All Rights Reserved.</h4>
+            <h4 className='mt-4 text-white'>Privacy Policy</h4>
           </div>
         </div> : <div>
 

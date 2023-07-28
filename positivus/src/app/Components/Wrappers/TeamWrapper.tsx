@@ -46,7 +46,7 @@ export default function TeamWrapper(props) {
       </div>
       <div
         className='w-full'
-        style={{ borderTopWidth: 1, marginTop: 10, borderColor: '#000' }}
+        style={{ borderTopWidth: 1, marginTop: 10, borderColor: '#000', paddingTop: 10 }}
       >
         <p
           style={{ fontSize: isMobile ? 16 : 18, marginTop: isMobile ? 30 : 0 }}

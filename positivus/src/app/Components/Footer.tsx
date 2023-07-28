@@ -70,6 +70,11 @@ export default function Footer() {
               unoptimized
             />
           </div>
+          <div></div>
+          <div>
+            <h4>© 2023 Positivus. All Rights Reserved.</h4>
+            <h4>Privacy Policy</h4>
+          </div>
         </div> : <div>
 
         </div>

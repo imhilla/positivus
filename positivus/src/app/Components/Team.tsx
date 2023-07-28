@@ -71,11 +71,12 @@ export default function Team() {
         <button
           className='text-white'
           style={{
-            marginTop: 30, width: 264,
+            marginTop: 30,
             height: 68,
             backgroundColor: '#191A23',
             borderRadius: 14,
-            fontSize: 20
+            fontSize: 20,
+            width: isMobile ? '100%' : 264
           }}>
           See all teams
         </button>

@@ -33,6 +33,7 @@ export default function Consultation(props) {
               onClick={() => setIsOpen(!isOpen)}
               className='ml-4'
               src={Minus}
+              style={{ height: 30, width: 30 }}
               alt="logo"
               unoptimized
             /> : <Image
@@ -40,6 +41,7 @@ export default function Consultation(props) {
               className='ml-4'
               src={Plus}
               alt="logo"
+              style={{ height: 30, width: 30 }}
               unoptimized
             />
           }

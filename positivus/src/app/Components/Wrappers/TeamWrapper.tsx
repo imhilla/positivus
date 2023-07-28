@@ -16,20 +16,22 @@ export default function TeamWrapper(props) {
         borderWidth: 1,
         borderBottomWidth: 5,
         borderColor: "#191A23",
+        marginTop: 30
       }}
       className='flex flex-col justify-between items-center'
     >
       <div>
         <div className='flex flex-row'>
           <Image
-            className='ml-4'
+            className='mr-4'
             src={props.image}
             alt="logo"
             unoptimized
+            style={{ height: 80, width: 80 }}
           />
           <div className='flex flex-col justify-end items-start p-1'>
-            <h4 style={{ fontSize: 20 }} className='text-start font-semibold'>{props.name}</h4>
-            <p style={{ fontSize: 18 }} className='text-start'>{props.title}</p>
+            <h4 style={{ fontSize: 16 }} className='text-start font-semibold'>{props.name}</h4>
+            <p style={{ fontSize: 16 }} className='text-start'>{props.title}</p>
           </div>
           <div>
             <Image
@@ -37,13 +39,14 @@ export default function TeamWrapper(props) {
               src={linkedin}
               alt="social"
               unoptimized
+              style={{ height: 30, width: 30 }}
             />
           </div>
         </div>
       </div>
       <div
         className='w-full'
-        style={{ borderTopWidth: 1, paddingTop: 10, paddingBottom: 10, borderColor: '#000' }}
+        style={{ borderTopWidth: 1, marginTop: 10, borderColor: '#000' }}
       >
         <p
           style={{ fontSize: isMobile ? 16 : 18, marginTop: isMobile ? 30 : 0 }}

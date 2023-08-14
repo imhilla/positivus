@@ -24,10 +24,10 @@ export default function Home() {
 
   return (
     <main
-      className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start max-w-screen-2xl"
+      className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start "
     >
       <div
-        className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start max-w-screen-2xl"
+        className="flex min-h-screen min-w-screen w-full flex-col items-start justify-start"
         style={{
           ...space_grotesk.style,
           paddingTop: isMobile ? 30 : 60,

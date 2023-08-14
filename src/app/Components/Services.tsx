@@ -14,7 +14,7 @@ export default function Services() {
   const isMobile = useIsMobile()
 
   return (
-    <div>
+    <div className='w-full'>
       <div style={{ height: 'auto' }} className='w-full flex flex-col justify-between lg:flex-row lg:justify-start items-center'>
         <div
           className='flex items-center justify-center'
